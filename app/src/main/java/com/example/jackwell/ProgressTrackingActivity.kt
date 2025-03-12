@@ -15,7 +15,6 @@ class ProgressTrackingActivity : AppCompatActivity() {
         val day3Progress: EditText = findViewById(R.id.day3_progress)
         val homeIcon: ImageButton = findViewById(R.id.home_icon)
         val barChartIcon: ImageButton = findViewById(R.id.bar_chart_icon)
-        val bellIcon: ImageButton = findViewById(R.id.bell_icon)
         val profileIcon: ImageButton = findViewById(R.id.profile_icon)
 
         homeIcon.setOnClickListener {
@@ -26,9 +25,6 @@ class ProgressTrackingActivity : AppCompatActivity() {
             // Handle bar chart icon click
         }
 
-        bellIcon.setOnClickListener {
-            // Handle bell icon click
-        }
 
         profileIcon.setOnClickListener {
             // Handle profile icon click

@@ -39,7 +39,8 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.032" />
+                app:layout_constraintVertical_bias="0.032"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/name_layout"
@@ -79,7 +80,8 @@
                 app:layout_constraintBottom_toTopOf="@+id/contact_number_layout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/contact_number_layout"
@@ -106,7 +108,8 @@
                 app:layout_constraintBottom_toTopOf="@+id/address_layout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/address_layout"
@@ -133,20 +136,22 @@
                 app:layout_constraintBottom_toTopOf="@+id/email_layout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_loginbtn"
-                android:textStyle="bold"
-                android:textColor="@color/white"
                 android:text="Edit Profile"
+                android:textColor="@color/white"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/navigation"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/address_layout"
-                app:layout_constraintVertical_bias="0.416" />
+                app:layout_constraintVertical_bias="0.416"
+                tools:ignore="HardcodedText,TextContrastCheck" />
 
             <LinearLayout
                 android:id="@+id/navigation"
@@ -163,7 +168,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/home_icon" />
+                    android:src="@drawable/home_icon"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/bar_chart_icon"
@@ -171,7 +177,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/bar_chart_icon" />
+                    android:src="@drawable/bar_chart_icon"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
                 <ImageButton
                     android:id="@+id/profile_icon"
@@ -179,7 +186,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/profile_icon" />
+                    android:src="@drawable/profile_icon"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
             </LinearLayout>
 
 
@@ -199,7 +207,8 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32" />
+        app:layout_constraintVertical_bias="0.32"
+        tools:ignore="ContentDescription" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,7 +15,8 @@ class LoginActivity : AppCompatActivity() {
         val emailInput: EditText = findViewById(R.id.email_input)
         val loginButton: Button = findViewById(R.id.login_button)
         loginButton.setOnClickListener {
-            val intent = Intent(this, WorkoutPlannerActivity::class.java)
+            startActivity(Intent(this, WorkoutPlannerActivity::class.java))
+
         }
     }
 }
