@@ -13,6 +13,18 @@
         android:theme="@style/Theme.JackWell"
         tools:targetApi="31">
         <activity
+            android:name=".WorkoutPlan4"
+            android:exported="false" />
+        <activity
+            android:name=".WorkoutPlan3"
+            android:exported="false" />
+        <activity
+            android:name=".WorkoutPlan2"
+            android:exported="false" />
+        <activity
+            android:name=".WorkoutPlan1"
+            android:exported="false" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity

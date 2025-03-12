@@ -1,3 +1,38 @@
 <resources>
     <string name="app_name">JackWell</string>
+    <string-array name="day1WorkoutsPlan1">
+        <item>Squats</item>
+        <item>Leg Press</item>
+        <item>RDL</item>
+        <item>Leg Extension</item>
+        <item>Bulgarian Split Squats</item>
+    </string-array>
+    <string-array name="day2WorkoutsPlan1">
+        <item>Incline Dumbbell Press</item>
+        <item>Dumbbell Fly</item>
+        <item>Cable Crossover</item>
+        <item>Dumbbell Shoulder Press</item>
+        <item>Lateral Raises</item>
+        <item>Face Pulls</item>
+    </string-array>
+    <string-array name="day3WorkoutsPlan1">
+        <item>Overhead Triceps Extension</item>
+        <item>Skull Crusher</item>
+        <item>Triceps Extension</item>
+        <item>Rope Triceps Extension</item>
+        <item>Cable Push Down</item>
+        <item>Overhead Triceps Extension</item>
+        <item>EZ-Bar Curl</item>
+        <item>Seated Dumbbell Curl</item>
+        <item>Hammer Curl</item>
+        <item>Dumbbell Wrist Curl</item>
+        <item>Dumbbell Reverse Curl</item>
+    </string-array>
+    <string-array name="day4WorkoutsPlan1">
+        <item>Pull Ups</item>
+        <item>Lat Pull down</item>
+        <item>T-Bar Row</item>
+        <item>Seated Cable Row</item>
+        <item>Dumbbell Shrugs</item>
+    </string-array>
 </resources>

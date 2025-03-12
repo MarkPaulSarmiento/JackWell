@@ -15,13 +15,14 @@
         android:contentDescription="Runner Image"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/progress_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="12dp"
         android:text="PROGRESS"
         android:textColor="@android:color/white"
         android:textSize="24sp"
@@ -29,7 +30,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/runner_image" />
+        app:layout_constraintTop_toBottomOf="@id/runner_image"
+        tools:ignore="HardcodedText" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -50,7 +52,8 @@
             android:layout_height="wrap_content"
             android:text="DAY 1"
             android:textColor="@android:color/white"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
 
         <EditText
             android:id="@+id/day1_progress"
@@ -60,7 +63,8 @@
             android:hint="Enter Day 1 progress"
             android:padding="10dp"
             android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white" />
+            android:textColorHint="@android:color/white"
+            tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
         <TextView
             android:id="@+id/day2_label"
@@ -69,7 +73,8 @@
             android:layout_marginTop="20dp"
             android:text="DAY 2"
             android:textColor="@android:color/white"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
 
         <EditText
             android:id="@+id/day2_progress"
@@ -79,7 +84,8 @@
             android:hint="Enter Day 2 progress"
             android:padding="10dp"
             android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white" />
+            android:textColorHint="@android:color/white"
+            tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
         <TextView
             android:id="@+id/day3_label"
@@ -88,7 +94,8 @@
             android:layout_marginTop="20dp"
             android:text="DAY 3"
             android:textColor="@android:color/white"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
 
         <EditText
             android:id="@+id/day3_progress"
@@ -98,7 +105,8 @@
             android:hint="Enter Day 3 progress"
             android:padding="10dp"
             android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white" />
+            android:textColorHint="@android:color/white"
+            tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
     </LinearLayout>
 
     <LinearLayout
@@ -121,7 +129,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/home_icon" />
+            android:src="@drawable/home_icon"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/bar_chart_icon"
@@ -129,7 +138,8 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/bar_chart_icon" />
+            android:src="@drawable/bar_chart_icon"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
         <ImageButton
             android:id="@+id/profile_icon"
@@ -137,6 +147,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@android:color/transparent"
-            android:src="@drawable/profile_icon" />
+            android:src="@drawable/profile_icon"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
