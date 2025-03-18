@@ -17,7 +17,6 @@ class WorkoutPlannerActivity : AppCompatActivity() {
         val plan2Button: ImageButton = findViewById(R.id.plan2_button)
         val plan3Button: ImageButton = findViewById(R.id.plan3_button)
         val plan4Button: ImageButton = findViewById(R.id.plan4_button)
-        val homeIcon: ImageButton = findViewById(R.id.home_icon)
         val barChartIcon: ImageButton = findViewById(R.id.bar_chart_icon)
         val profileIcon: ImageButton = findViewById(R.id.profile_icon)
 
@@ -27,24 +26,18 @@ class WorkoutPlannerActivity : AppCompatActivity() {
         }
 
         plan2Button.setOnClickListener {
-            // Handle plan 2 button click
+            startActivity(Intent(this, WorkoutPlan1::class.java))
         }
 
         plan3Button.setOnClickListener {
-            // Handle plan 3 button click
+            startActivity(Intent(this, WorkoutPlan1::class.java))
         }
         plan4Button.setOnClickListener {
-
+            startActivity(Intent(this, WorkoutPlan1::class.java))
         }
-        homeIcon.setOnClickListener {
-
-        }
-
         barChartIcon.setOnClickListener {
             startActivity(Intent(this, ProgressTrackingActivity::class.java))
         }
-
-
         profileIcon.setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))
         }

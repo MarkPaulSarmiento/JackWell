@@ -11,30 +11,33 @@
         android:id="@+id/greeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="40dp"
-        android:text="Hello, Mark"
+        android:text="Hello"
         android:textColor="@android:color/white"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/workouts_title"
         android:layout_width="173dp"
         android:layout_height="56dp"
-        android:layout_marginBottom="508dp"
         android:gravity="center"
         android:text="WORKOUTS"
         android:textColor="@android:color/white"
         android:textSize="28sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865"
         tools:ignore="HardcodedText,VisualLintOverlap,TextSizeCheck" />
 
     <LinearLayout
@@ -78,6 +81,7 @@
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         app:cardCornerRadius="20dp"
@@ -89,14 +93,16 @@
         app:layout_constraintVertical_bias="0.75">
 
         <GridLayout
-            android:paddingTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/blue_green_gradient"
             android:columnCount="2"
+            android:paddingTop="30dp"
             android:rowCount="2"
             tools:ignore="ScrollViewSize">
+
             <ImageButton
+                android:src="@drawable/plan_one"
                 android:id="@+id/plan1_button"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -104,9 +110,14 @@
                 android:layout_column="0"
                 android:layout_columnWeight="1"
                 android:layout_margin="20dp"
+                android:background="@drawable/bg_corner"
+                android:backgroundTint="@color/white"
                 tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
             <ImageButton
+                android:src="@drawable/plan_two"
+                android:background="@drawable/bg_corner"
+                android:backgroundTint="@color/white"
                 android:id="@+id/plan2_button"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -117,6 +128,9 @@
                 tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
             <ImageButton
+                android:src="@drawable/plan_three"
+                android:background="@drawable/bg_corner"
+                android:backgroundTint="@color/white"
                 android:id="@+id/plan3_button"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -125,7 +139,11 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="20dp"
                 tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
             <ImageButton
+                android:src="@drawable/plan_four"
+                android:background="@drawable/bg_corner"
+                android:backgroundTint="@color/white"
                 android:id="@+id/plan4_button"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
@@ -135,8 +153,7 @@
                 android:layout_margin="20dp"
                 tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
-            </GridLayout>
-
+        </GridLayout>
 
 
     </androidx.cardview.widget.CardView>

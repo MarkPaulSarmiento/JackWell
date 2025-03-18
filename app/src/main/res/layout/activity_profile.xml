@@ -10,10 +10,10 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="390dp"
-        android:layout_height="match_parent"
+        android:layout_height="500dp"
         android:layout_marginTop="150dp"
         app:cardCornerRadius="20dp"
-
+        app:layout_constraintVertical_bias="0.9"
         app:cardBackgroundColor="#D3D3D3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,121 +27,35 @@
 
 
             <TextView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
                 android:gravity="center"
-                android:text="Name"
-                android:textColor="#757575"
+                android:text="Mark Paul Sarmiento"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/navigation"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.032"
-                tools:ignore="HardcodedText" />
+                app:layout_constraintVertical_bias="0.041" />
 
             <TextView
-                android:id="@+id/name_layout"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/profile_data_bg"
-                app:layout_constraintBottom_toTopOf="@id/email"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <TextView
-                android:id="@+id/email_layout"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/profile_data_bg"
-                app:layout_constraintBottom_toTopOf="@+id/contact_number"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <TextView
-                android:id="@+id/contact_number"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_width="350dp"
+                android:layout_height="30dp"
                 android:gravity="center"
-                android:text="Contact Number"
-                android:textColor="#757575"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/contact_number_layout"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="HardcodedText" />
+                android:text="mrkpulsrmnt12@gmail.com"
 
-            <TextView
-                android:id="@+id/contact_number_layout"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/profile_data_bg"
-                app:layout_constraintBottom_toTopOf="@+id/address"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent" />
-
-            <TextView
-                android:id="@+id/address"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Address"
-                android:layout_marginBottom="20dp"
-                android:textColor="#757575"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/address_layout"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="HardcodedText" />
-
-            <TextView
-                android:id="@+id/address_layout"
-                android:layout_width="match_parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_height="50dp"
-                android:layout_marginBottom="80dp"
-                android:background="@drawable/profile_data_bg"
                 app:layout_constraintBottom_toTopOf="@+id/navigation"
-                tools:layout_editor_absoluteX="0dp" />
-
-            <TextView
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:gravity="center"
-                android:text="Email"
-                android:textColor="#757575"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/email_layout"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="HardcodedText" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.164" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
                 android:background="@drawable/bg_loginbtn"
                 android:text="Edit Profile"
                 android:textColor="@color/white"
@@ -149,8 +63,6 @@
                 app:layout_constraintBottom_toTopOf="@+id/navigation"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/address_layout"
-                app:layout_constraintVertical_bias="0.416"
                 tools:ignore="HardcodedText,TextContrastCheck" />
 
             <LinearLayout
@@ -198,8 +110,8 @@
 
     <ImageView
         android:id="@+id/profile_picture"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:background="@drawable/profile_picture_background"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
@@ -207,8 +119,20 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32"
+        app:layout_constraintVertical_bias="0.544"
         tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/edit"
+        android:src="@drawable/baseline_edit_24"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.235" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
