@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "712706947043",
+    "project_id": "jackwell-db289",
+    "storage_bucket": "jackwell-db289.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712706947043:android:360a213d2e716627d292d6",
+        "android_client_info": {
+          "package_name": "com.example.jackwell"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnfZZw_FAVLGuEXTWLGYHxEYONTVfiBs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

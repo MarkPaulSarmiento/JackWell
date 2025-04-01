@@ -1,38 +1,103 @@
 <resources>
     <string name="app_name">JackWell</string>
     <string-array name="day1WorkoutsPlan1">
+        <item>Push-ups</item>
         <item>Squats</item>
-        <item>Leg Press</item>
-        <item>RDL</item>
-        <item>Leg Extension</item>
-        <item>Bulgarian Split Squats</item>
+        <item>Jump Rope</item>
     </string-array>
+
     <string-array name="day2WorkoutsPlan1">
-        <item>Incline Dumbbell Press</item>
-        <item>Dumbbell Fly</item>
-        <item>Cable Crossover</item>
-        <item>Dumbbell Shoulder Press</item>
-        <item>Lateral Raises</item>
-        <item>Face Pulls</item>
+        <item>Plank</item>
+        <item>Jumping Jacks</item>
+        <item>Burpees</item>
     </string-array>
+
     <string-array name="day3WorkoutsPlan1">
-        <item>Overhead Triceps Extension</item>
-        <item>Skull Crusher</item>
-        <item>Triceps Extension</item>
-        <item>Rope Triceps Extension</item>
-        <item>Cable Push Down</item>
-        <item>Overhead Triceps Extension</item>
-        <item>EZ-Bar Curl</item>
-        <item>Seated Dumbbell Curl</item>
-        <item>Hammer Curl</item>
-        <item>Dumbbell Wrist Curl</item>
-        <item>Dumbbell Reverse Curl</item>
+        <item>Bench Press</item>
+        <item>Deadlifts</item>
+        <item>Bicep Curls</item>
     </string-array>
+
     <string-array name="day4WorkoutsPlan1">
-        <item>Pull Ups</item>
-        <item>Lat Pull down</item>
-        <item>T-Bar Row</item>
-        <item>Seated Cable Row</item>
-        <item>Dumbbell Shrugs</item>
+        <item>Running</item>
+        <item>Leg Press</item>
+        <item>Stretching</item>
     </string-array>
+
+    <!-- Workout Plan 2 -->
+    <string-array name="day1WorkoutsPlan2">
+        <item>Jump Squats</item>
+        <item>Mountain Climbers</item>
+        <item>Pull-ups</item>
+    </string-array>
+
+    <string-array name="day2WorkoutsPlan2">
+        <item>Dumbbell Press</item>
+        <item>Russian Twists</item>
+        <item>High Knees</item>
+    </string-array>
+
+    <string-array name="day3WorkoutsPlan2">
+        <item>Lat Pulldown</item>
+        <item>Shoulder Press</item>
+        <item>Tricep Dips</item>
+    </string-array>
+
+    <string-array name="day4WorkoutsPlan2">
+        <item>Treadmill Sprint</item>
+        <item>Kettlebell Swings</item>
+        <item>Foam Rolling</item>
+    </string-array>
+
+    <!-- Workout Plan 3 -->
+    <string-array name="day1WorkoutsPlan3">
+        <item>Box Jumps</item>
+        <item>Battle Ropes</item>
+        <item>Step-ups</item>
+    </string-array>
+
+    <string-array name="day2WorkoutsPlan3">
+        <item>Chest Fly</item>
+        <item>Side Lunges</item>
+        <item>Plank Holds</item>
+    </string-array>
+
+    <string-array name="day3WorkoutsPlan3">
+        <item>Seated Row</item>
+        <item>Hamstring Curls</item>
+        <item>Calf Raises</item>
+    </string-array>
+
+    <string-array name="day4WorkoutsPlan3">
+        <item>Swimming</item>
+        <item>Resistance Band Workouts</item>
+        <item>Yoga</item>
+    </string-array>
+
+    <!-- Workout Plan 4 -->
+    <string-array name="day1WorkoutsPlan4">
+        <item>Knee Push-ups</item>
+        <item>Wall Sit</item>
+        <item>Arm Circles</item>
+    </string-array>
+
+    <string-array name="day2WorkoutsPlan4">
+        <item>TRX Rows</item>
+        <item>Medicine Ball Throws</item>
+        <item>Bear Crawls</item>
+    </string-array>
+
+    <string-array name="day3WorkoutsPlan4">
+        <item>Leg Lifts</item>
+        <item>Sumo Deadlifts</item>
+        <item>Farmers Walk</item>
+    </string-array>
+
+    <string-array name="day4WorkoutsPlan4">
+        <item>Rowing Machine</item>
+        <item>Jump Lunges</item>
+        <item>Cool Down Stretch</item>
+    </string-array>
+
+
 </resources>

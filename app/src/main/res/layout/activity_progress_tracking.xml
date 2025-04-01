@@ -11,12 +11,12 @@
         android:id="@+id/runner_image"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:scaleType="centerCrop"
+        android:layout_marginTop="4dp"
         android:contentDescription="Runner Image"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/progress_title"
@@ -28,21 +28,18 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/runner_image"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toBottomOf="@id/runner_image" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/progress_title">
 
@@ -52,8 +49,7 @@
             android:layout_height="wrap_content"
             android:text="DAY 1"
             android:textColor="@android:color/white"
-            android:textSize="18sp"
-            tools:ignore="HardcodedText" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/day1_progress"
@@ -64,7 +60,7 @@
             android:padding="10dp"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white"
-            tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            android:inputType="text" />
 
         <TextView
             android:id="@+id/day2_label"
@@ -73,8 +69,7 @@
             android:layout_marginTop="20dp"
             android:text="DAY 2"
             android:textColor="@android:color/white"
-            android:textSize="18sp"
-            tools:ignore="HardcodedText" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/day2_progress"
@@ -85,7 +80,7 @@
             android:padding="10dp"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white"
-            tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            android:inputType="text" />
 
         <TextView
             android:id="@+id/day3_label"
@@ -94,8 +89,7 @@
             android:layout_marginTop="20dp"
             android:text="DAY 3"
             android:textColor="@android:color/white"
-            android:textSize="18sp"
-            tools:ignore="HardcodedText" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/day3_progress"
@@ -106,8 +100,32 @@
             android:padding="10dp"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white"
-            tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            android:inputType="text" />
     </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:text="Save Progress"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/view_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:text="View Progress Chart"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/save_progress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
         android:id="@+id/navigation"
@@ -116,12 +134,11 @@
         android:background="@drawable/container_background"
         android:gravity="center"
         android:orientation="horizontal"
+        android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.889">
+        app:layout_constraintTop_toBottomOf="@id/view_chart">
 
         <ImageButton
             android:id="@+id/home_icon"
@@ -130,7 +147,7 @@
             android:layout_margin="10dp"
             android:background="@android:color/transparent"
             android:src="@drawable/home_icon"
-            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+            android:contentDescription="Home Button" />
 
         <ImageButton
             android:id="@+id/bar_chart_icon"
@@ -139,7 +156,7 @@
             android:layout_margin="10dp"
             android:background="@android:color/transparent"
             android:src="@drawable/bar_chart_icon"
-            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+            android:contentDescription="Progress Chart Button" />
 
         <ImageButton
             android:id="@+id/profile_icon"
@@ -148,6 +165,7 @@
             android:layout_margin="10dp"
             android:background="@android:color/transparent"
             android:src="@drawable/profile_icon"
-            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+            android:contentDescription="Profile Button" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

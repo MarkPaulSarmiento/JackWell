@@ -40,6 +40,8 @@
         app:layout_constraintVertical_bias="0.865"
         tools:ignore="HardcodedText,VisualLintOverlap,TextSizeCheck" />
 
+
+
     <LinearLayout
         android:id="@+id/navigation"
         android:layout_width="0dp"
@@ -51,10 +53,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
+
         <ImageButton
             android:id="@+id/home_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_margin="10dp"
             android:background="@android:color/transparent"
             android:src="@drawable/home_icon"
@@ -62,8 +65,8 @@
 
         <ImageButton
             android:id="@+id/bar_chart_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_margin="10dp"
             android:background="@android:color/transparent"
             android:src="@drawable/bar_chart_icon"
@@ -71,12 +74,24 @@
 
         <ImageButton
             android:id="@+id/profile_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_margin="10dp"
             android:background="@android:color/transparent"
             android:src="@drawable/profile_icon"
             tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/bmi"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/bmi"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+
 
     </LinearLayout>
 
@@ -152,6 +167,13 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="20dp"
                 tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+
+
+
+
+
+
 
         </GridLayout>
 
