@@ -32,13 +32,13 @@ class WorkoutPlan3 : AppCompatActivity() {
         setupSpinner(spinner1, R.array.day1WorkoutsPlan1)
 
         spinner2 = findViewById(R.id.spinner2)
-        setupSpinner(spinner2, R.array.day2WorkoutsPlan1)
+        setupSpinner(spinner2, R.array.day2WorkoutsPlan2)
 
         spinner3 = findViewById(R.id.spinner3)
-        setupSpinner(spinner3, R.array.day3WorkoutsPlan1)
+        setupSpinner(spinner3, R.array.day3WorkoutsPlan3)
 
         spinner4 = findViewById(R.id.spinner4)
-        setupSpinner(spinner4, R.array.day4WorkoutsPlan1)
+        setupSpinner(spinner4, R.array.day4WorkoutsPlan4)
 
         // Proceed Button functionality
         proceedBtn = findViewById(R.id.proceedBtn)

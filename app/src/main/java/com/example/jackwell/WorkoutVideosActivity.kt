@@ -68,18 +68,63 @@ class WorkoutVideosActivity : AppCompatActivity() {
     // Function to get video file name based on exercise name
     private fun getVideoFile(exercise: String): String {
         return when (exercise.lowercase()) {
+            // Plan 1
             "push ups", "pushup", "push-up" -> "pushup"
             "squats", "squat" -> "squats"
-            "burpees", "burpee" -> "burpee"
+            "jump rope", "jumprope" -> "jumprope"
             "plank", "planking" -> "plank"
             "jumping jacks", "jumpingjacks" -> "jumpingjacks"
+            "burpees", "burpee" -> "burpee"
             "bench press", "benchpress" -> "benchpress"
             "deadlifts", "deadlift" -> "deadlift"
             "bicep curls", "bicep curl", "bicepcurls" -> "bicepcurls"
             "running", "run" -> "running"
             "leg press", "legpress" -> "legpress"
             "stretching", "stretch" -> "stretching"
-            else -> ""
+
+            // Plan 2
+            "jump squats", "jumpsquats" -> "jumpsquats"
+            "mountain climbers", "mountainclimbers" -> "mountainclimbers"
+            "pull ups", "pullup", "pullups" -> "pullups"
+            "dumbbell press", "dumbbellpress" -> "dumbbellpress"
+            "russian twists", "russiantwists" -> "russiantwists"
+            "high knees", "highknees" -> "highknees"
+            "lat pulldown", "latpulldown" -> "latpulldown"
+            "shoulder press", "shoulderpress" -> "shoulderpress"
+            "tricep dips", "tricepdips" -> "tricepdips"
+            "treadmill sprint", "treadmillsprint" -> "treadmillsprint"
+            "kettlebell swings", "kettlebelswings" -> "kettlebelswings"
+            "foam rolling", "foamrolling" -> "foamrolling"
+
+            // Plan 3
+            "box jumps", "boxjumps" -> "boxjumps"
+            "battle ropes", "battleropes" -> "battleropes"
+            "step-ups", "stepups" -> "stepups"
+            "chest fly", "chestfly" -> "chestfly"
+            "side lunges", "sidelunges" -> "sidelunges"
+            "plank holds", "plankholds" -> "plankholds"
+            "seated row", "seatedrow" -> "seatedrow"
+            "hamstring curls", "hamstringcurls" -> "hamstringcurls"
+            "calf raises", "calfraises" -> "calfraises"
+            "swimming", "swim" -> "swimming"
+            "resistance band workouts", "resistanceband" -> "resistanceband"
+            "yoga" -> "yoga"
+
+            // Plan 4
+            "knee push-ups", "kneepushups" -> "kneepushups"
+            "wall sit", "wallsit" -> "wallsit"
+            "arm circles", "armcircles" -> "armcircles"
+            "trx rows", "trxrows" -> "trxrows"
+            "medicine ball throws", "medicineball" -> "medicineball"
+            "bear crawls", "bearcrawls" -> "bearcrawls"
+            "leg lifts", "leglifts" -> "leglifts"
+            "sumo deadlifts", "sumodeadlifts" -> "sumodeadlifts"
+            "farmers walk", "farmerswalk" -> "farmerswalk"
+            "rowing machine", "rowing" -> "rowing"
+            "jump lunges", "jumplunges" -> "jumplunges"
+            "cool down stretch", "cooldown" -> "cooldown"
+
+            else -> "totoybibo"
         }
     }
 

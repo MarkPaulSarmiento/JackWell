@@ -80,6 +80,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/age_edit_text" />
 
+
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/save_button"
         android:layout_width="150dp"
@@ -93,6 +95,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/gender_edit_text"
         app:layout_constraintBottom_toBottomOf="parent" />
+
+
 
 
 
