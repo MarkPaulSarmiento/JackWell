@@ -124,7 +124,7 @@ class WorkoutVideosActivity : AppCompatActivity() {
             "jump lunges", "jumplunges" -> "jumplunges"
             "cool down stretch", "cooldown" -> "cooldown"
 
-            else -> "totoybibo"
+            else -> ""
         }
     }
 
