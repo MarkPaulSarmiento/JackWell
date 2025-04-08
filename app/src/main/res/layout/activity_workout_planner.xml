@@ -91,6 +91,16 @@
             android:src="@drawable/bmi"
             tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
+        <ImageButton
+            android:id="@+id/meal"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/kain"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
 
 
     </LinearLayout>

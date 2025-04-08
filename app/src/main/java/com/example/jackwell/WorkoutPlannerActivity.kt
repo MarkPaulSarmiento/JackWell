@@ -20,6 +20,7 @@ class WorkoutPlannerActivity : AppCompatActivity() {
         val plan4Button: ImageButton = findViewById(R.id.plan4_button)
         val barChartIcon: ImageButton = findViewById(R.id.bar_chart_icon)
         val profileIcon: ImageButton = findViewById(R.id.profile_icon)
+        val mealButton: ImageButton = findViewById(R.id.meal)
         val bmi: ImageButton = findViewById(R.id.bmi)
 
 
@@ -49,6 +50,11 @@ class WorkoutPlannerActivity : AppCompatActivity() {
        profileIcon.setOnClickListener {
            startActivity(Intent(this, ProfileActivity::class.java))
         }
+
+        mealButton.setOnClickListener {
+            startActivity(Intent(this, MealPlannerActivity::class.java))
+        }
+
 
     }
 }

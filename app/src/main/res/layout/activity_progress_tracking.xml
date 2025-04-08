@@ -7,6 +7,9 @@
     android:background="@drawable/jackbg"
     tools:context=".ProgressTrackingActivity">
 
+
+
+
     <ImageView
         android:id="@+id/runner_image"
         android:layout_width="match_parent"
@@ -57,10 +60,11 @@
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text_background"
             android:hint="Enter Day 1 progress"
+            android:inputType="text"
+            android:minHeight="48dp"
             android:padding="10dp"
             android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
-            android:inputType="text" />
+            android:textColorHint="@android:color/white" />
 
         <TextView
             android:id="@+id/day2_label"
@@ -77,10 +81,11 @@
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text_background"
             android:hint="Enter Day 2 progress"
+            android:inputType="text"
+            android:minHeight="48dp"
             android:padding="10dp"
             android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
-            android:inputType="text" />
+            android:textColorHint="@android:color/white" />
 
         <TextView
             android:id="@+id/day3_label"
@@ -97,10 +102,11 @@
             android:layout_height="wrap_content"
             android:background="@drawable/edit_text_background"
             android:hint="Enter Day 3 progress"
+            android:inputType="text"
+            android:minHeight="48dp"
             android:padding="10dp"
             android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
-            android:inputType="text" />
+            android:textColorHint="@android:color/white" />
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton

@@ -1,7 +1,9 @@
 package com.example.jackwell
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
@@ -22,6 +24,8 @@ class ProgressTrackingActivity : AppCompatActivity() {
     private lateinit var barChartButton: ImageButton
     private lateinit var profileButton: ImageButton
 
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_progress_tracking)
@@ -38,6 +42,9 @@ class ProgressTrackingActivity : AppCompatActivity() {
         homeButton = findViewById(R.id.home_icon)
         barChartButton = findViewById(R.id.bar_chart_icon)
         profileButton = findViewById(R.id.profile_icon)
+
+
+
 
         // Save Progress Button Click
         saveProgressButton.setOnClickListener {

@@ -15,9 +15,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JackWell"
         tools:targetApi="31">
-
-
-
+        <activity
+            android:name=".meal_item"
+            android:exported="false" />
+        <activity
+            android:name=".MealPlannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MealAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".Meal"
+            android:exported="false" />
+        <activity
+            android:name=".NutritionAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".NutritionItem"
+            android:exported="false" />
+        <activity
+            android:name=".NutritionActivity"
+            android:exported="false" />
         <activity
             android:name=".EditProfileActivity"
             android:exported="false" />
